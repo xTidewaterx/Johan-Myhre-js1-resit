@@ -4,33 +4,26 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/style.css">
-
-
+    <meta name="description" content="a list of very funny jokes that will bring much laughter">
+    <title>Jokes - JavaScript</title>
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
+    <div class="jokes">
+      <h1>Jokes:</h1>
+      <h2>Sort by type:</h2>
 
-  
-<div class="jokeContainer">
+      <select id="jokes__type">
+        <option class="jokes__select" value="1">Any</option>
+        <option class="jokes__select" value="2">General</option>
+        <option class="jokes__select" value="3">Programmer</option>
+      </select>
 
 
-<h1>Jokes:</h1>
-<h2>Sort by type:</h2>
+      <ul class="jokes__container"></ul>
+    </div>
 
-<select id="jokeType">
-
-  <option class="jokeType__select" value="1">Any</option>
-  <option class="jokeType__select"  value="2">General</option>
-  <option class="jokeType__select"  value="3">Programmer</option>
-
-</select>
-
-    <ul class="container"></ul>
-  </div>
-
-    <!--    <script src="contact.js"></script> -->
-
+   
     <script type="module" src="index.js"></script>
   </body>
 </html>
